@@ -1,0 +1,17 @@
+.bodyDiv {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 70px;
+}
+
+
+@media screen and (max-width: 420px) {
+    .bodyDiv {
+        width: 100%;
+        min-width: 0;
+    }
+}

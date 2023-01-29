@@ -1,0 +1,74 @@
+.Table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Table th {
+    font-weight: bold !important;
+}
+
+.Table:first-child {
+    border-radius: 0.7rem !important;
+}
+.detailsBtn {
+    padding: 15px;
+    border-radius: 9px;
+    background: #ffadad8f;
+    color: red;
+    border: none
+}
+
+.cancelBtn {
+    padding: 8px;
+    border-radius: 9px;
+    background: #ffadad8f;
+    color: red;
+    border: none
+}
+
+.saveBtn {
+    padding: 8px;
+    border-radius: 9px;
+    background: rgb(145 254 159 / 47%);
+    color: green;
+    border: none
+}
+
+.addBtn {
+    padding: 15px;
+    border-radius: 9px;
+    background: rgb(145 254 159 / 47%);
+    color: green;
+    border: none
+}
+
+.editBtn {
+    padding: 15px;
+    border-radius: 9px;
+    background: #59bfff;
+    color: white;
+    border: none
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .Table {
+        width: 170%;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .Table{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23rem;
+    }
+}

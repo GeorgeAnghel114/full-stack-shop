@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background: #24262b;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 0 0 1rem;
+    font-weight: bold;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    /*background: #e91e63;*/
+    transition: .5s;
+}
+
+.aNav:hover{
+    background: #dd0026;
+    transition: .5s;
+
+}
+
+@media only screen and (max-width: 1320px){
+    .right{
+        display: none;
+    }
+    .left {
+        display: none;
+    }
+    .hamburger{
+        display: block !important;
+        float: right;
+        margin: 25px;
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 920px){
+    .left {
+        display: none;
+    }
+    .hamburger{
+        display: block !important;
+        float: right;
+        margin: 25px;
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 468px){
+    label.logo{
+        font-size: 20px;
+    }
+}
+
+
+.hamburger{
+    color: white !important;
+    display: none;
+}
+
+.mobileContainer{
+    position: fixed;
+    background: black;
+    height: 100%;
+    z-index: 3;
+    width: 100%;
+}
+
+.mobileNav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: none !important;
+
+}
+
+.cartNav {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    line-height: 25px;
+    
+}
+
+.cartNav:hover{
+    background: #dd0026;
+    transition: .5s;
+
+}

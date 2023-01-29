@@ -1,0 +1,124 @@
+@startuml
+
+class LoggedUser{
+- id : int
+- email : String
+- password : String
+}
+
+class Admin {
+- id : int
+- name : String
+- email : String
+- password: String
+}
+
+class Product {
+- id : int
+- name : String
+- referenceCode : String
+- categoryId : int
+- supplierId : int
+- brandId : int
+- description : String
+- image : String
+- size : String
+- sellingPrice : float
+- purchasePrice : float
+- purchaseDate : Date
+- totalStock : int
+- discount : float
+}
+
+
+class Report {
+- id : int
+- adminId : int
+- startDate : Date
+- endDate : Date
+- totalCost : float
+- profit : float
+- totalEarned : float
+}
+
+class Category {
+- id : int
+- name : String
+}
+
+class Supplier{
+- id : int
+- name : String
+}
+
+class Client {
+- id : int
+- firstName : String
+- lastName : String
+- email : String
+- password : String
+- loggedId : int
+- deliveryDetailId : int
+- paymentDetailId : int
+}
+
+class CartItem {
+- id : int
+- productId : int
+- quantity : int
+- totalPrice : int
+}
+
+class DeliveryDetail{
+- id : int
+- firstName : String
+- lastName : String
+- phoneNumber: String
+- country : String
+- city : String
+- address : String
+- zipCode : String
+}
+
+class Cart {
+- id : int
+- cartItemId : int[]
+- clientId : int
+}
+
+class PaymentDetail{
+- id : int
+- cardHolder : String
+- cardNumber : String
+- expirationDate: String
+}
+
+class Brand{
+- id : int
+- name : String
+}
+
+class Order{
+- id : int
+- cartId : int
+- status : String
+}
+
+Client o-- LoggedUser
+Client o-- DeliveryDetail
+Client o-- PaymentDetail
+Client o-- Cart
+
+Product o-- Category
+Product o-- Supplier
+Product o-- Brand
+
+CartItem o-- Product
+
+Cart o--- CartItem
+
+Order o-- Cart
+
+Admin o-- Report
+
+@enduml
