@@ -7,15 +7,15 @@
 
 :small_orange_diamond: As a customer you can search for your favorite pair and browse to the product page
 
-:small_orange_diamond: The product page contains additional infromation about the product, such as price, size and what paterial the product si made of
+:small_orange_diamond: The product page contains additional information about the product, such as price, size and what paterial the product si made of
 
-:small_orange_diamond: You cand add the product to the basket, where you cand change the quantity of the product, delete it or continue to the checkout page
+:small_orange_diamond: You cand add the product to the basket, where you can change the quantity of the product, delete it or continue to the checkout page
 
-:small_orange_diamond: On the order page you cand view the products you have added to the basket and also to place the order you must fill all the fields with the delivery infromation
+:small_orange_diamond: On the order page you can view the products you have added to the basket and also to place the order you must fill all the fields with the delivery information
 
-:small_orange_diamond: As an admin, you have access to all the products on the site, you and add, delete or modifyu the product information on the site
+:small_orange_diamond: As an admin, you have access to all the products on the site, you and add, delete or modify the product information on the site
 
-:small_orange_diamond: On the admin page you cand find graphs that contain information about expenses, receipts and detailed customer orders
+:small_orange_diamond: On the admin page you can find graphs that contain information about expenses, receipts and detailed customer orders
 
 ## Technologies used:
 
